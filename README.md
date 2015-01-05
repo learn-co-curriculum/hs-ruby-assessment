@@ -5,7 +5,7 @@ level: 2
 type: review
 ---
 
-# Ruby Review
+## Ruby Review
 
 ![ruby](http://media2.giphy.com/media/12jdalMQkt7iM/200.gif)
 
