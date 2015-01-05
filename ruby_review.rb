@@ -119,9 +119,10 @@ end
 # Call the add_new_attribute method to add a number one ranking to the school.
 
 
-# Bonus
+# Bonus!
 def print_all_items(school)
   # Write out the code to puts all the values in the school. NOTE: If this takes too long, skip it!
 
 end
+
 
