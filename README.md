@@ -11,6 +11,7 @@ type: review
 
 Time to freshen up and test out your Ruby skills!
 
-Run `bundle install` to install all the Gems you need then run `rspec --fail-fast` to run each test.
+Follow the instructions and write your code in `ruby_review.rb`.
 
-Write your code to make the tests pass in `ruby_review.rb`.
+Run `bundle install` to install the Gems you need, then run `rspec --fail-fast` to run the tests to make sure your code is working properly.
+
