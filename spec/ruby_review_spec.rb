@@ -10,6 +10,9 @@ describe "Level 1" do
     end
 
     it "prints each item in the array" do
+      # STDOUT is a constant that ruby defines for you
+      # that represents 'output' so that you can test
+      # against puts and Input/Output (IO) methods
       expect(STDOUT).to receive(:puts).with("Danny")
       expect(STDOUT).to receive(:puts).with("Steph")
       expect(STDOUT).to receive(:puts).with("Victoria")
