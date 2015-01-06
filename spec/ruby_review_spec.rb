@@ -24,10 +24,6 @@ describe "Level 1" do
     it "returns the third item" do
       expect(third_item(teachers)).to eq("Vanessa") 
     end
-
-    it "returns the user at an index" do
-      expect(vic_index(teachers)).to eq(1)
-    end
   end
 end
 
@@ -104,45 +100,6 @@ describe "Level 3" do
       delete_student(school)
       expect(school[:students].count).to eq(4)
       expect(school[:students].find {|student| student[:name] == 'Billy'}).to be_nil
-    end
-  end
-end
-
-describe "Level 4" do
-  describe "Methods" do
-    school = { 
-      :name => "Happy Funtime School",
-      :location => "NYC",
-      :instructors => [ 
-        {:name=>"Steph", :subject=>"Violin" },
-        {:name=>"Victoria", :subject=>"Field Hockey"},
-        {:name=>"Vanessa", :subject=>"Karaoke"}
-      ],
-      :students => [ 
-        {:name => "Marissa", :grade => "B"},
-        {:name=>"Billy", :grade => "F"},
-        {:name => "Frank", :grade => "A"},
-        {:name => "Sophie", :grade => "C"}
-      ]
-    }
-
-    it "finds instructor by subject" do
-      expect(find_instructor_by_subject("Karaoke", school)).to eq("Vanessa")
-    end
-
-    it "changes value of hash in nested array" do
-      update_subject("Steph", "Fiddle", school)
-      expect(school[:instructors].find { |instructor| instructor[:name]=="Steph" }[:subject]).to eq "Fiddle"
-    end
-
-    it "adds new instructor to hash" do
-      add_instructor("Lyel", "Drumming", school)
-      expect(school[:instructors].find { |instructor| instructor[:name]=="Lyel"}).to eq({:name=>"Lyel",:subject=>"Drumming"})
-    end
-
-    it "adds new top level key" do
-      add_new_attribute(:ranking, 1, school)
-      expect(school[:ranking]).to eq 1
     end
   end
 end
