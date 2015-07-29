@@ -1,9 +1,4 @@
----
-tags: methods, arrays, hashes, kids, ruby
-language: ruby
-level: 2
-type: review
----
+
 
 ## Ruby Review
 
