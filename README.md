@@ -35,3 +35,5 @@ And follow the steps below to open up a pull request, so we can see you fabulous
 3. Confirm the Create Pull Request
 
 ![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/3-opening-the-pull-request.png)
+
+<a href='https://learn.co/lessons/hs-ruby-assessment' data-visibility='hidden'>View this lesson on Learn.co</a>
